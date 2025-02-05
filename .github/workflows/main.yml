@@ -9,7 +9,23 @@ on:
   pull_request:
     branches: [ "master" ]
 
+
 jobs:
+  linting:
+    name: Linting
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.9"
+      - name: Linting
+        run: |
+          pip install pre-commit
+          pre-commit run --all-files
+
   build:
 
     runs-on: ubuntu-latest
