@@ -1,8 +1,7 @@
 import warnings
 
 from numpy import ndim
-from sklearn.linear_model import MultiTaskLasso
-from sklearn.linear_model import OrthogonalMatchingPursuit
+from sklearn.linear_model import MultiTaskLasso, OrthogonalMatchingPursuit
 
 
 def constrained_binary_solve(

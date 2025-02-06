@@ -1,5 +1,4 @@
-from pkg_resources import DistributionNotFound
-from pkg_resources import get_distribution
+from pkg_resources import DistributionNotFound, get_distribution
 
 try:
     __version__ = get_distribution("python-sensors").version
@@ -8,7 +7,6 @@ except DistributionNotFound:
 
 from .classification import SSPOC
 from .reconstruction import SSPOR
-
 
 __all__ = [
     # Modules:
