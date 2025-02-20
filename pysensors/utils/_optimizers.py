@@ -13,7 +13,7 @@ def constrained_binary_solve(
         )
 
     model = OrthogonalMatchingPursuit(
-        tol=0, fit_intercept=fit_intercept, normalize=normalize, precompute=precompute
+        tol=0, fit_intercept=fit_intercept, precompute=precompute
     )
 
     if quiet:
