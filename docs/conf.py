@@ -22,7 +22,6 @@ extensions = [
     "sphinx.ext.autosummary",
     "sphinx.ext.napoleon",
     "sphinx.ext.mathjax",
-    "sphinx_nbexamples",
 ]
 
 apidoc_module_dir = f"../{project}"
